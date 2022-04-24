@@ -1,4 +1,4 @@
-# watch-us-build-trello
+# vue-trello
 
 ## Project setup
 ```
@@ -27,4 +27,4 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# vue-trello
+
