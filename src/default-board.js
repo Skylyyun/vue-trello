@@ -7,7 +7,7 @@ export default {
       name: 'todo',
       tasks: [
         {
-          description: '',
+          description: 'hello world, I am a student who is learning vuejs',
           name: 'first task',
           id: uuid(),
           userAssigned: null
