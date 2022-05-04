@@ -38,10 +38,10 @@ export default new Vuex.Store({
       task[key] = value
       // Vue.set(task, key, value), both reactive
     },
-    MOVE_TASK(state, { fromColumn, toColumn, taskIndex}) {
+    MOVE_TASK(state, { fromTasks, toTasks, taskIndex}) {
       // get the task which will be moved
-      const taskToMove = fromColumn.splice(taskIndex,1)[0]
-      toColumn.push(taskToMove)
+      const taskToMove = fromTasks.splice(taskIndex,1)[0]
+      toTasks.push(taskToMove)
     }
   }
 })
