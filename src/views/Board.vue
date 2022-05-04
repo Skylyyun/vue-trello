@@ -80,9 +80,9 @@ export default {
       e.dataTransfer.setData('from-column-index', fromColumnIndex)
     },
     moveTask(e, toTasks) {
-      const fromColumnIndex = e.dataTransfer.getDate('from-column-index')
+      const fromColumnIndex = e.dataTransfer.getData('from-column-index')
       const fromTasks = this.board.columns[fromColumnIndex].tasks
-      const taskIndex = e.dataTransfer.getDate('task-index')
+      const taskIndex = e.dataTransfer.getData('task-index')
       this.$store.commit('MOVE_TASK', {
         fromTasks,
         toTasks,
