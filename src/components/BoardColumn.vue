@@ -22,13 +22,14 @@
           :columnIndex="columnIndex"
           :board="board"
         />
-      </div>
+      
       <input
         type="text"
         class="block p-2 w-full bg-transparent"
         placeholder="+ Enter new task"
         @keyup.enter="createTask($event, column.tasks)"
       />
+     </div>
     </AppDrag>
   </AppDrop>
 </template>
